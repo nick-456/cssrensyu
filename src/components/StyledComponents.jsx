@@ -1,18 +1,29 @@
-.container {
+import styled from "styled-components";
+
+export const StyledComponents = () => {
+  return (
+    <SContainer>
+      <STitle>- styled components -</STitle>
+      <SButton>FIGHT!!</SButton>
+    </SContainer>
+  );
+};
+
+const SContainer = styled.div`
   border: solid 2px #392eff;
   border-radius: 20px;
   padding: 8px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
+`;
 
-.title {
+const STitle = styled.p`
   margin: 0;
   color: #3d84a8;
-};
+`;
 
-.button {
+const SButton = styled.button`
   background-color: #abedd8;
   border: none;
   padding: 8px;
@@ -22,4 +33,4 @@
     color: #fff;
     cursor: pointer;
   }
-};
+`;
